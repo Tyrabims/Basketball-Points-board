@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div id="home">
+                <h3>HOME</h3>
+                <div class="points-text" id="home-points">0</div>
+                <div class="add-points-btns" id="add-home-points-btns">
+                    <button id="home-freethrow-btn" onclick="addHomeFreethrowPoints()">+ 1</button>
+                    <button id="home-two-points-btn" onclick="addHomeTwoPoints()">+ 2</button>
+                    <button id="home-three-points-btn" onclick="addHomeThreePoints()">+ 3</button><br>
+                    <button id="reset-home-points" onclick="resetHomePoints()">RESET</button>       
+            </div>
+            </div>
+            <div id="guest">
+                <h3>GUEST</h3>
+                <div class="points-text" id="guest-points">0</div>
+                <div class="add-points-btns" id="add-guest-points-btns">
+                    <button id="guest-freethrow-btn" onclick="addGuestFreethrowPoints()">+ 1</button>
+                    <button id="guest-two-points-btn" onclick="addGuestTwoPoints()">+ 2</button>
+                    <button id="guest-three-points-btn" onclick="addGuestThreePoints()">+ 3</button><br>
+                    <button id="reset-guest-points" onclick="resetGuestPoints()">RESET</button>
+            </div> 
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
