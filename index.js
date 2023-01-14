@@ -3,42 +3,22 @@ guestPoint = 0;
 let homePoints = document.querySelector("#home-points");
 let guestPoints = document.querySelector("#guest-points");
 
-function addHomeFreethrowPoints() {
-    homePoint += 1
-    homePoints.textContent = homePoint; 
+function additionFunction(sum, points) {
+  if (points === homePoints) {
+    homePoint += sum;
+    points.textContent = homePoint;
+  } else {
+    guestPoint += sum;
+    points.textContent = guestPoint;
+  }
 }
 
-function addHomeTwoPoints() {
-    homePoint += 2
-    homePoints.textContent = homePoint;
-}
-
-function addHomeThreePoints() {
-    homePoint += 3
-    homePoints.textContent = homePoint;
-}
-
-function addGuestFreethrowPoints() {
-    guestPoint += 1
-    guestPoints.textContent = guestPoint;
-}
-
-function addGuestTwoPoints() {
-    guestPoint += 2
-    guestPoints.textContent = guestPoint;
-}
-
-function addGuestThreePoints() {
-    guestPoint += 3
-    guestPoints.textContent = guestPoint;
-}
-
-function resetHomePoints() {
+function resetBtn(PointsDisplay) {
+  if (PointsDisplay === homePoints) {
     homePoint = 0;
     homePoints.textContent = homePoint;
-}
-
-function resetGuestPoints() {
+  }else{
     guestPoint = 0;
     guestPoints.textContent = guestPoint;
+  }
 }
